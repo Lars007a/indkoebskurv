@@ -1,0 +1,17 @@
+- ret hvor vi fetcher fra?
+- ret funktionen der tilføjer produkt, ikke bare kopi af gowala.
+- setup toastify.
+- lav nav, med ikon, hvor man kan se, et rød ikon, med hvor mange,
+  der er i kurven, hvis der er nogle. position rel og abs.
+- side til kurven med fjern knap.
+- side til kurven med total, subtotal for hvert produkt.
+
+- gør prodcard brug bare obj variabel istedet for navngivne variabler og obj variabel.
+
+- tilføj loading animationer? Spinners?
+- få cart remove og add til at fungere baseret på produkt id, og ikke element produkt objekt.
+- bedre styling. Både desktop og mobil.
+- implementere subtotal og total.
+
+
+- eventuelt tilføj fuld backend?
