@@ -29,11 +29,12 @@
     gap: 6px;
   }
 
-  > .content > .top > h2 {
+  > .content > .top h2 {
     font-weight: 300;
+    text-align: start;
   }
 
-  > .content > .top > span {
+  > .content > .top span {
     font-weight: 300;
     padding-block: 8px;
     padding-inline: 20px;
@@ -44,11 +45,35 @@
   }
 
   > .content > .middle {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
   }
 
   > .content > .middle > p {
     font-weight: 300;
     overflow: hidden;
+  }
+
+  > .content > .midbm {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  > .content > .midbm > .stock {
+    font-weight: 600;
+    font-size: 18px;
+    text-align: start;
+  }
+
+  > .content > .midbm > h3 {
+    font-weight: 300;
+  }
+
+  > .content > .midbm > .stock span {
+    font-weight: 300;
   }
 
   > .content > .bottom {
@@ -57,9 +82,5 @@
     gap: 15px;
     align-items: center;
     justify-content: space-between;
-  }
-
-  > .content > .bottom > h3 {
-    font-weight: 300;
   }
 }

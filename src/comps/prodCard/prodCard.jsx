@@ -22,8 +22,14 @@ export default function prodCard({ obj }) {
         <div className={styles.middle}>
           <p>{obj?.description}</p>
         </div>
-        <div className={styles.bottom}>
+
+        <div className={styles.midbm}>
           <h3>{obj?.price},-</h3>
+          <p className={styles.stock}>
+            På lager: <span>{obj.quantity}</span>
+          </p>
+        </div>
+        <div className={styles.bottom}>
           <Btn
             func={() => {
               btnClick(obj);
@@ -31,6 +37,7 @@ export default function prodCard({ obj }) {
           >
             Tilføj
           </Btn>
+          <input type="number" />
         </div>
       </section>
     </article>
