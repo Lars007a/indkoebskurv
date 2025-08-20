@@ -1,39 +1,23 @@
 import styles from "./productDisplay.module.css";
-import { useSendRequest } from "../../hooks/useSendRequest.jsx";
+import { useFetchData } from "../../hooks/useRequests.jsx";
 import ProdCard from "../prodCard/prodCard.jsx";
 import { useEffect, useState } from "react";
 
 export default function productDisplay({}) {
-  /* const req = useSendRequest("products", null);
+  const req = useFetchData("prods");
+  const [toShow, setToShow] = useState([]);
 
   useEffect(() => {
     if (req.data == null || req.data == undefined) return;
 
-    console.log(req.data);
+    setToShow(req.data.data);
   }, [req.data]);
- */
-
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    fetch("/data.json")
-      .then((val) => {
-        return val.json();
-      })
-      .then((val) => {
-        setData(val);
-        console.log(val);
-      })
-      .catch((error) => {
-        console.log(error.message);
-      });
-  }, []);
 
   return (
     <section className={styles.display}>
-      {data && data.length > 0 ? (
-        data.map((element) => {
-          return <ProdCard obj={element} key={element.id} />;
+      {toShow.length > 0 ? (
+        toShow.map((element) => {
+          return <ProdCard obj={element} key={element._id} />;
         })
       ) : (
         <p>Ingen produkter!</p>

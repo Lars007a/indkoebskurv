@@ -17,4 +17,9 @@
       font-weight: 300;
     }
   }
+
+  > .noprods {
+    text-align: center;
+    font-size: 16px;
+  }
 }

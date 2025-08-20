@@ -1,0 +1,69 @@
+.tablecon {
+  color: var(--spanbc);
+  overflow-x: auto; /* nemmest med tables. */
+  width: 100%;
+  margin-block-end: 20px;
+
+  table {
+    width: 100%;
+    border-collapse: collapse; /* så der ikke er et lille mellemrum */
+  }
+
+  table img {
+    height: 50px;
+    width: auto;
+    object-fit: cover;
+  }
+
+  table thead {
+    background-color: var(--btn-color);
+    color: var(--btn-text);
+    font-weight: 300;
+  }
+
+  th,
+  td {
+    padding: 8px 5px;
+    text-align: left;
+  }
+
+  tbody th,
+  tbody td {
+    border: var(--std-border);
+  }
+
+  tbody svg {
+    height: 18px;
+    width: auto;
+    color: darkslategrey;
+    cursor: pointer;
+  }
+
+  tbody svg:hover {
+    color: rgb(7, 17, 17);
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: transparent;
+  }
+}
+
+.btn {
+  cursor: pointer;
+  background-color: var(--btn-color);
+
+  border: 0;
+  outline: none;
+  border-radius: 8px;
+  text-align: center;
+  color: var(--btn-text);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.2s;
+
+  padding: 8px 12px;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: var(--btn-color-hover);
+}

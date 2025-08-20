@@ -4,6 +4,11 @@
   border: var(--std-border);
   border-radius: var(--radius);
 
+  flex: 1 1 calc(33.333% - 30px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   > img {
     border-radius: var(--radius) var(--radius) 0px 0px;
     object-fit: cover;
@@ -12,29 +17,35 @@
     border-bottom: var(--std-border);
   }
 
-  > .content {
+  .content {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    justify-content: space-between;
 
+    gap: 1.5rem;
     padding-inline: 2rem;
     padding-block: 1.5rem;
   }
 
-  > .content > .top {
+  .content > .top {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: flex-start;
-    gap: 6px;
+
+    flex-shrink: 0;
+    min-height: 80px;
+
+    gap: 8px;
+
+    justify-self: flex-start;
   }
 
-  > .content > .top h2 {
+  .content > .top h2 {
     font-weight: 300;
     text-align: start;
   }
 
-  > .content > .top span {
+  .content > .top span {
     font-weight: 300;
     padding-block: 8px;
     padding-inline: 20px;
@@ -44,43 +55,59 @@
     box-shadow: var(--box-shadow);
   }
 
-  > .content > .middle {
+  .content > .middle {
     display: flex;
     flex-direction: column;
     gap: 12px;
   }
 
-  > .content > .middle > p {
+  .content > .middle > p {
     font-weight: 300;
     overflow: hidden;
   }
 
-  > .content > .midbm {
+  .content > .midbm {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
 
-  > .content > .midbm > .stock {
+  .content > .midbm > .stock {
     font-weight: 600;
     font-size: 18px;
     text-align: start;
   }
 
-  > .content > .midbm > h3 {
+  .content > .midbm > h3 {
     font-weight: 300;
   }
 
-  > .content > .midbm > .stock span {
+  .content > .midbm > .stock span {
     font-weight: 300;
   }
 
-  > .content > .bottom {
+  .content > .bottom {
     display: flex;
     flex-direction: row;
     gap: 15px;
     align-items: center;
     justify-content: space-between;
+    align-self: flex-end;
+  }
+
+  .content > .bottom input[type="number"] {
+    width: 100%;
+    padding-block: 15px;
+    font-size: 16px;
+    border-radius: var(--radius);
+    border: 2px solid #a5a5a5;
+    outline: none;
+    transition: border 0.2s;
+    padding-inline: 10px;
+  }
+
+  .content > .bottom input[type="number"]:focus {
+    border: 2px solid var(--btn-color-hover);
   }
 }

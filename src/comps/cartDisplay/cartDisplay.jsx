@@ -9,19 +9,21 @@ export default function cartDisplay({}) {
 
   return (
     <section className={styles.displaySec}>
-      {cart.cart &&
-        cart.cart.length > 0 &&
+      {cart.cart && cart.cart.length > 0 ? (
         cart.cart.map((element) => {
           return (
             <CartItem
               obj={element}
-              key={element.id}
+              key={element._id}
               addFunc={cart.addItem}
               removeFunc={cart.removeItem}
               updateFunc={cart}
             />
           );
-        })}
+        })
+      ) : (
+        <p className={styles.noprods}>Ingen produkter i kurven!</p>
+      )}
 
       <div className={styles.total}>
         <h3>Total</h3>

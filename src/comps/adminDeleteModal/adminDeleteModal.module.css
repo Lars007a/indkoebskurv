@@ -1,0 +1,122 @@
+.adminDeleteModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.7);
+
+  > .actualModal {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--bc-color);
+    border-radius: var(--radius);
+
+    box-shadow: var(--box-shadow);
+
+    @media (max-width: 600px) {
+      width: 80%;
+      overflow-x: scroll;
+    }
+  }
+
+  .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-block: 12px;
+    padding-inline: 12px;
+
+    border-radius: var(--radius) var(--radius) 0px 0px;
+
+    background-color: var(--btn-color);
+
+    > svg {
+      width: 25px;
+      height: auto;
+      color: white;
+      cursor: pointer;
+      transition: color 0.2s;
+
+      &:hover {
+        color: #ccc;
+      }
+    }
+
+    > h2 {
+      font-size: 20px;
+      font-weight: 300;
+      color: var(--bc-color);
+    }
+  }
+
+  .middle {
+    padding-inline: 12px;
+
+    > p {
+      font-size: 16px;
+    }
+
+    > p span {
+      font-weight: 600;
+    }
+  }
+
+  .bottom {
+    padding-inline: 12px;
+    padding-block-end: 15px;
+
+    > .cn {
+      /* container for knapperne */
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 12px;
+      width: 50%;
+
+      > button {
+        color: var(--bc-color);
+        flex: 1;
+        outline: none;
+        border: none;
+        border-radius: var(--radius);
+        padding-block: 12px;
+        padding-inline: 20px;
+        transition: background-color 0.2s, color 0.2s;
+        cursor: pointer;
+      }
+
+      > button.keep {
+        color: var(--btn-color);
+        border: 1px solid var(--btn-color);
+        background-color: transparent;
+      }
+
+      > button.keep:hover {
+        background-color: var(--btn-color);
+        color: var(--bc-color);
+      }
+
+      > button.delete {
+        background-color: red;
+        border: 1px solid red;
+      }
+
+      > button.delete:hover {
+        background-color: transparent;
+        color: red;
+      }
+    }
+  }
+}

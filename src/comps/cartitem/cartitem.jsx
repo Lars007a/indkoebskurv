@@ -25,13 +25,13 @@ export function CartItem({ obj, addFunc, removeFunc }) {
         <div>
           <FaMinusCircle
             onClick={() => {
-              removeFunc(obj.id);
+              removeFunc(obj.product._id);
             }}
           />
           <p>{obj.quantity}</p>
           <FaPlusCircle
             onClick={() => {
-              addFunc(obj.product);
+              addFunc(obj.product, 1);
             }}
           />
         </div>

@@ -16,6 +16,9 @@ export default function nav({}) {
             <li>
               <NavLink to={"/cart"}>Kurv</NavLink>
             </li>
+            <li>
+              <NavLink to={"/admin/addprod"}>admin</NavLink>
+            </li>
           </ul>
         </div>
       </div>

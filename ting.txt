@@ -15,3 +15,53 @@
 
 
 - eventuelt tilføj fuld backend?
+
+
+- gør bedre design.
+- tilføj input nummer felt til hvor mange man ville tilføje.
+- tilføj nummer til hvor mange man har i lageret.
+- tilføj "placere ordre" knap på kurven, der så tjekker om der er nok i lageret.
+- gør så, sådan at man ikke kan tilføje ting, der ikke er på lageret.
+- style navbar.
+- put some max text length på title og desc, eventuel gør det som hook, og så gør noget med min-height og max-height i css.
+- 
+
+- find ud af hvilken du ville have bagefter.
+
+- lav denne færdig i dag.
+
+
+
+
+
+
+gjort sådan, at den bruger dataen fra databasen nu, så at man kan tilføje ting her,
+se hvad der er, og slette dem her, mangler faktisk at den sletter.
+måske ændre knap, så man kan ændre infomationen?
+
+
+
+NY:
+- bagefter lav login auth.
+- måske skal cart genbygges? Stort set gjort.
+- Eller data der gemmes deri? Stort set gjort.
+- Default data. Stort set lavet.
+- Delete modal og delete funktion. Stort set lavet.
+- rate produkt?
+- alle ting i setup script. done.
+- kategorier ind.
+- short text i seeprods admin panel.
+- gør siden pænere????
+    - Lav footer????
+        - med copyright eller andet?
+    - lav simpel navbar,
+        - bare med det hele i center, måske søgning.
+    - lav textlinewith og put ind på de forskellige sider.
+    - header på siden???
+    - single card visning???
+    - ændre på visning af produkter???
+    - mobile responsive???
+    - better font, with more weights?
+    - clean up kode???
+
+- fiks bug med hvornår ting bliver slettet. Stort set gjort.

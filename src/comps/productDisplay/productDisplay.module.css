@@ -1,8 +1,8 @@
 .display {
-  width: 100%;
+  /*   width: 100%;
   display: grid;
   gap: 30px;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
   /* kan sige 100px 100px 100px, kan sige 1fr 1fr 1fr, får 3 dynamiske, eller tre 100px,
     kan sige repeat(3, 1fr); for 3 der hver er 1fr, repeat(3, 300px); for 3 der hver er 300px,
     kan sige repeat(auto-fill, minmax(200px, 1fr); for at auto-fill med hvor mange der kan være i griden, og minmax med minimum størelsen på 200px, og maksimum på en dynamisk størrelse.
@@ -10,8 +10,14 @@
   /*   grid-template-columns: repeat(3, 1fr);
  */
 
-  @media (max-width: 700px) {
+  /*   @media (max-width: 700px) {
     display: flex;
     flex-direction: column;
   }
+ */
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 30px;
 }

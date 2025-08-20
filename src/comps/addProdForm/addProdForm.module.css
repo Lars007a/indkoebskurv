@@ -1,0 +1,71 @@
+.sec {
+  > form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    > .row {
+      display: flex;
+      flex-direction: row;
+      gap: 12px;
+
+      * {
+        flex: 1;
+      }
+    }
+
+    input[type="file"] {
+      margin-inline: 12px;
+    }
+
+    input[type="number"],
+    input[type="text"],
+    textarea {
+      outline: none;
+      border: var(--std-border);
+      border-radius: var(--radius);
+
+      font-size: 16px;
+      padding-block: 10px;
+      padding-inline: 16px;
+      transition: border 0.2s;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 100px;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      font-size: 16px;
+    }
+
+    input[type="number"]:focus,
+    input[type="text"]:focus,
+    textarea:focus {
+      border: 1px solid var(--btn-color-hover);
+    }
+
+    button {
+      background-color: var(--btn-color);
+      border: 1px solid transparent;
+      outline: none;
+      color: var(--btn-text);
+      padding-block: 10px;
+      padding-inline: 16px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+
+      border-radius: var(--radius);
+      box-shadow: var(--box-shadow);
+
+      transition: background-color 0.2s;
+    }
+
+    button:hover {
+      background-color: var(--btn-color-hover);
+    }
+  }
+}
