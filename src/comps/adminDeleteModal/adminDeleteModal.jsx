@@ -12,7 +12,6 @@ export default function adminDeleteModal({ setter, id, updateFunc }) {
   const remove = () => {
     d.generic(null, `prods/${id}`, "DELETE");
     setter(null);
-    updateFunc();
   };
 
   return (

@@ -7,17 +7,22 @@
     kan sige repeat(3, 1fr); for 3 der hver er 1fr, repeat(3, 300px); for 3 der hver er 300px,
     kan sige repeat(auto-fill, minmax(200px, 1fr); for at auto-fill med hvor mange der kan være i griden, og minmax med minimum størelsen på 200px, og maksimum på en dynamisk størrelse.
   */
-  /*   grid-template-columns: repeat(3, 1fr);
- */
-
-  /*   @media (max-width: 700px) {
-    display: flex;
-    flex-direction: column;
-  }
- */
-
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+
+  @media (max-width: 1000px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+
+  /*   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 30px; */
 }

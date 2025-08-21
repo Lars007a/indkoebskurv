@@ -38,7 +38,7 @@ export default function addProdForm() {
       <form onSubmit={onSub} ref={formTing}>
         <input type="text" name="title" placeholder="Titel..." />
         <textarea name="description" placeholder="Description..."></textarea>
-        <div className={styles.row}>
+        <div className={`${styles.row} ${styles.pricestock}`}>
           <input type="number" name="price" placeholder="Pris..." />
           <input type="number" name="stock" placeholder="Stock på lager..." />
         </div>

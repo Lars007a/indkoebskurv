@@ -54,7 +54,7 @@ NY:
 - gør siden pænere????
     - Lav footer????
         - med copyright eller andet?
-    - lav simpel navbar,
+    - lav simpel navbar, done tror jeg.
         - bare med det hele i center, måske søgning.
     - lav textlinewith og put ind på de forskellige sider.
     - header på siden???
@@ -64,4 +64,33 @@ NY:
     - better font, with more weights?
     - clean up kode???
 
-- fiks bug med hvornår ting bliver slettet. Stort set gjort.
+
+
+
+
+
+
+
+
+
+
+- file:///C:/Users/laarr/Downloads/praktisk_web_opgaver/praktisk_web_opgaver/Javascript%20Indk%E2%94%9C%C2%A9bskurv.pdf
+- file:///C:/Users/laarr/Downloads/praktisk_web_opgaver/praktisk_web_opgaver/CRUD.pdf
+- file:///C:/Users/laarr/Downloads/praktisk_web_opgaver/praktisk_web_opgaver/implementer%20brugerauthentificering.pdf
+- ikke noget specefikt projekt lavet fuldt ud, bare lavet noget af de her opgaver, og samlet lidt af det sammen her på den her side.
+- Plan for visning:
+    - Vis hvilke opgaver der er sløjfet sammen.
+        - Sig, at de er dem jeg har brugt, og sløjfet sammen, en af dem er kun halvdelen lavet (login), men stadigvæk.
+    - Vis siden generelt, og hvordan den virker, og hvad man kan.
+        - vis at det virker, forhåbentligt.
+    - Hvis at jeg har en backend server.
+        - med express.
+        - med en database.
+        - og postman sat op.
+    - og så en frontend lavet i react.
+    - Vis eventuelt noget kode.
+        - Spørg eventuelt om hvad de ville se,
+        ellers så bare vis:
+            - loginprotected.jsx.
+            - useCart.jsx, sammen med prodDisplay.jsx, og prodCard.jsx, hvordan tilføjer, og så clearcart i usecart.
+            - 

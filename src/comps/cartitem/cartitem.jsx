@@ -9,14 +9,13 @@ export function CartItem({ obj, addFunc, removeFunc }) {
   return (
     <article className={styles.item}>
       <div className={styles.box}>
-        <img src={obj.product.image} alt="img" />
+        <img src={obj.product.img} alt="img" />
       </div>
 
       <div className={`${styles.box} ${styles.text}`}>
         <h3>{obj.product.title}</h3>
         <div className={styles.pricebox}>
           <h3>{obj.product.price},-</h3>
-          <span>{obj.product.category}</span>
         </div>
         <p>{obj.product.description}</p>
       </div>

@@ -2,6 +2,7 @@ import { useLocalStorage } from "@uidotdev/usehooks";
 import { toast } from "react-toastify";
 
 //Hook der har funktioner til at arbejde med kurven.
+//Funktioner til at arbejde og interacte med kurven er gemt her.
 
 export function useCart() {
   const [cart, setCart] = useLocalStorage("cart", []); //Gemmer cart i localstorage.
@@ -47,7 +48,7 @@ export function useCart() {
         //Loop over cart.
 
         if (newArray[i].product._id == itemElement._id) {
-          //Hvis produktet id passer med det element vi tilføjet til's id.
+          //Find produkt der passer med det element vi tilføjet til's id.
 
           if (newArray[i].quantity + ammount > newArray[i].product.stock) {
             //Tjekker om den tilføjelse til quantity vi ville lave ville få produktet til at gå over stock.
@@ -114,5 +115,9 @@ export function useCart() {
     return total; //Returnere total.
   };
 
-  return { addItem, removeItem, getTotal, cart };
+  const clearCart = () => {
+    setCart([]);
+  };
+
+  return { addItem, removeItem, getTotal, cart, clearCart };
 }

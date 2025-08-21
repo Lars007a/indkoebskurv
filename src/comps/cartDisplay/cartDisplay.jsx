@@ -29,6 +29,9 @@ export default function cartDisplay({}) {
         <h3>Total</h3>
         <h3>{total},-</h3>
       </div>
+      <div className={styles.clear}>
+        <button onClick={cart.clearCart}>Ryd kurv</button>
+      </div>
     </section>
   );
 }

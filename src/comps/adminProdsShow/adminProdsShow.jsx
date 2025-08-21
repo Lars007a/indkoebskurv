@@ -8,7 +8,7 @@ import adminDeleteModal from "../adminDeleteModal/adminDeleteModal.jsx";
 export default function prodsShow() {
   //Get prods, and prepare them, så at de kan blive vist i tabellen nedenfor.
 
-  const r = useFetchData("prods", null);
+  const r = useFetchData("prods");
   const d = useSendData();
   const [toShow, setToShow] = useState([]);
 

@@ -8,14 +8,10 @@ import { useTextShortener } from "../../hooks/useTextShortener.jsx";
 
 export default function prodCard({ obj }) {
   const cart = useCart();
-  const qn = useRef(null);
-  const descShort = useTextShortener(obj?.description, 110);
+  const qn = useRef(null); //input field til antal der skal tilføjes.
+  const descShort = useTextShortener(obj?.description, 110); //Forkorter teksten/beskrivelsen.
 
   const btnClick = (productToAdd) => {
-    //Eventuelt også et tjek med hvor mange der allerede er i carten, og om det ville gå over hvor mange der er i lageret...
-    //eventuelt for loop med hvor mange gange der er i qn ref fra input nummer.
-    //Og så også et tjek når man adder en i carten.
-
     cart.addItem(productToAdd, Number(qn.current.value));
   };
 

@@ -8,6 +8,23 @@
   padding-block-start: 25px;
   padding-block-end: 0px;
 
+  .logout {
+    background-color: red;
+    color: var(--sec-color);
+    border: none;
+    outline: none;
+    box-shadow: var(--box-shadow);
+    padding-inline: 12px;
+    border-radius: var(--radius);
+    transition: background-color 0.2s;
+
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgb(186, 15, 15);
+    }
+  }
+
   > a {
     flex: 1;
   }
